@@ -1,0 +1,64 @@
+.active {
+    transform: translateY(0px);
+    animation: scroll-first 20s ease-in-out infinite;
+
+}
+
+/* .testing {
+    transform: translateY(0px);
+} */
+
+@keyframes scroll-first {
+    0% { 
+        transform: translateY(0%); 
+      
+    }
+
+    17% { 
+        transform: translateY(0%);
+        
+    }
+
+    20% {
+        transform: translateY(-60px);
+    }
+
+
+    37% { 
+        transform: translateY(-60px);
+        
+    }
+
+    40% {
+        transform: translateY(-143px);
+    }
+
+    57% { 
+        transform: translateY(-143px); 
+    }
+
+    60% { 
+        transform: translateY(-200px); 
+       
+    }
+
+    77% { 
+        transform: translateY(-200px); 
+       
+    }
+
+    80% { 
+        transform: translateY(-267px); 
+    }
+
+    
+    99% { 
+        transform: translateY(-267px); 
+        
+    }
+
+    100% {
+        transform: translateY(0%);         
+    }
+}
+

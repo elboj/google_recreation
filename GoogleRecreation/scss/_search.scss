@@ -1,0 +1,172 @@
+
+.search_page {
+    display: none;
+    padding-left: 30px;
+    height: 500px;
+    flex-direction: column;
+    //border: $bordered;
+
+    .btn_hld {
+        display: flex;
+        flex-direction: row;
+        padding-top: 20px;
+
+        .sr_lft {
+            position: relative;
+            padding: 5px;
+            border-radius: 50%;
+            border: none;
+            background-color: #1A73E8;
+            
+        }
+    
+        .sr_mid {
+            @extend .sr_lft;
+            left: 25px;
+            background-color: #636363;
+        }
+    
+        .sr_rig {
+            @extend .sr_lft;
+            left: 45px;
+            background-color: #636363;
+        }
+    }
+
+    .col_1 {
+        //border: $bordered;
+        width: 80%;
+        color: #636363;
+        
+        p {
+            padding: 30px 0;
+            font-size: 1.8rem;
+        }
+
+        span {
+            line-height: 50px;
+        }
+
+        label {
+            font-size: 12px;
+            color: black;
+        }
+
+        .bydefault {
+            color: rgb(228, 228, 228);
+        }
+
+        // #job_title {
+        //     //border: 2px solid red;
+        // }
+
+       
+        #job {
+            width: 100%;
+            padding: 10px 5px;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            box-shadow: 0px 3px 5px 0px rgba(63, 63, 63, 0.2);
+        }
+        
+        
+        #location_div {
+            position: relative;
+            top: 50px;
+
+            #location {
+                @extend #job;
+                border: 1px solid rgb(228, 228, 228);
+                box-shadow: 0px 3px 5px 0px rgba(146, 146, 146, 0.1);
+            }
+            
+            #location::placeholder {
+                color: rgb(228, 228, 228);
+                padding-left: 20px;
+            }
+        }
+
+        #xp {
+            position: relative;
+            top: 100px;
+            cursor: pointer;
+            //border: $bordered;
+
+            // #skill_holder {
+            //     visibility: hidden;
+            // }
+        
+            #skill {
+                width: 100%;
+                padding: 10px 5px;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+                box-shadow: 0px 3px 5px 0px rgba(63, 63, 63, 0.2);
+                border: 1px solid rgb(228, 228, 228);
+                box-shadow: 0px 3px 5px 0px rgba(111, 111, 111, 0.1);
+            }
+
+            #skill::placeholder {
+                color: rgb(228, 228, 228);
+                padding-left: 20px;
+            }
+        }
+    }
+   
+}
+
+.footer {
+    display: none;
+    background-color: #f7f4f4;
+    width: 100%;
+    height: 80px;
+    margin-top: 50px;
+    align-items: center;
+
+    .f_txt {
+        padding: 0 40px;
+        color: rgb(116, 116, 116);
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+
+    .legal {
+        color: rgb(116, 116, 116);
+        font-size: 0.65rem;
+    }
+
+    .legal_tr {
+        @extend .legal;
+        padding-left: 40px;
+    }
+}
+
+.footer + p {
+    color: royalblue;
+    text-align: center;
+    font-size: 0.7rem;
+    padding-top: 10px;
+
+}
+
+
+
+
+
+
+
+
+
+
+//BY DEFAULT THIS IS THE COLOR.. BUT ON CLICK IT REVERTS TO INPUT PROPERTIES
+
+
+
+
+
+
+

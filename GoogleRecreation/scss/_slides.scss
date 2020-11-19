@@ -1,0 +1,176 @@
+.slide_show {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+    // border: $border;
+    margin-top: 50px;
+    color: #202124;
+    font-family: 'Poppins', sans-serif;
+    padding: 0 50px;
+    
+
+    .slide_container {
+        position: relative;
+        margin: 0 auto;
+        //border: $bordered;
+    }
+
+    .mySlides {
+        display: none;
+    }
+    
+    .images {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    
+    
+    .scroll-left{
+        height: 60px; 
+        overflow: hidden;
+        position: relative;
+        top: 20px;
+        // border: 2px solid salmon;
+
+        ul li {
+            list-style-type: none;
+            transform: translateY(100%);
+            font-size: 3rem;
+            font-weight: 700;
+            padding: 10px 0;
+            display: block;
+            
+        }
+    }
+
+    .scroll-left + p {
+        padding: 20px 0;
+        font-size: 3rem;
+        font-weight: 500;
+        
+    }
+
+    #b_txt {
+        font: {
+            size: 1.7rem;
+            weight: 300;
+        };
+        padding: 40px 0px;
+    }
+
+    #search_box {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        // border: 2px solid red;
+        margin: 0 auto;
+        padding: 20px 0px;
+        font-size: 1rem;
+        font-weight: 300;
+
+        #labelHolder {
+            display: flex;
+            width: 100%;
+            // border: $bordered;
+            div {
+                width: 50%;
+
+                #r_shf {
+                    position: relative;
+                    right: -40px;
+                    bottom: 10px;
+                }
+
+                #l_shf {
+                    position: relative;
+                    left: 42px;
+                    bottom: 10px;
+                }
+            }
+        }
+
+        #jobRole {
+            display: flex;
+            width: 100%;
+            //border: 2px solid lightcoral;
+
+            form {
+                display: flex;
+                width: 100%;
+                //border: slateblue 2px solid;
+
+                #connector {
+                    width: 10% !important;
+
+                    ::placeholder {
+                        text-align: center;
+                    }
+                }
+                #sub_div {
+                    width: 10% !important;
+                    border: 1px solid rgb(223, 222, 222);
+                    border-top-right-radius: 10px;
+                    border-bottom-right-radius: 10px;
+                    text-align: center;
+                    
+                    input[type = submit] {
+                        cursor: pointer;
+                        background-color: white;
+                        border: none;
+                        padding: 15px 0;
+                        
+                    }
+                }
+
+                div {
+                    width: 40%;
+                    //border: 2px solid red;
+
+                    input[type = text] {
+                        padding: 15px 0px;
+                        width: 100%;
+                        border: 1px solid rgb(223, 222, 222);
+                    }
+
+                    input[type=text]:focus {
+                        border: 3px solid #555;
+                      }
+                }
+
+                #jr {
+                    //border: 1px solid tomato;
+                    border-top-left-radius: 10px;
+                    border-bottom-left-radius: 10px;
+                    background-image: url('../imgs/searchicon.png');
+                    background-position: 10px 10px; 
+                    background-repeat: no-repeat;
+                }
+
+                #jr::placeholder {
+                    position: relative;
+                    left: 40px;
+                    font-size: 1rem;
+                }
+
+                #wh::placeholder {
+                    @extend #jr::placeholder;
+                }
+                
+            }
+        }
+    }
+
+
+        
+
+        
+
+        
+
+    
+}
+
+
