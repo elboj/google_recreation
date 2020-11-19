@@ -108,3 +108,6 @@ works for a fs of 2.5rem
         transform: translateY(0%);         
     }
 }
+
+*************
+ADDED THIS LINE
