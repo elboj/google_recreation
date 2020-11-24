@@ -368,11 +368,16 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
 }
 
 .slide_show #search_box #jobRole form #connector {
-  width: 10% !important;
+  width: 100% !important;
+  display: none;
 }
 
 .slide_show #search_box #jobRole form #connector ::-webkit-input-placeholder {
@@ -392,22 +397,24 @@ html {
 }
 
 .slide_show #search_box #jobRole form #sub_div {
-  width: 10% !important;
-  border: 1px solid #dfdede;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
+  width: 100% !important;
   text-align: center;
 }
 
 .slide_show #search_box #jobRole form #sub_div input[type=submit] {
-  cursor: pointer;
-  background-color: white;
+  background-color: #1967D2;
+  width: 100%;
+  color: white;
   border: none;
+  border-radius: 20px;
   padding: 15px 0;
+  cursor: pointer;
+  font-weight: 500;
 }
 
 .slide_show #search_box #jobRole form div {
-  width: 40%;
+  width: 100%;
+  margin: 10px 0;
 }
 
 .slide_show #search_box #jobRole form div input[type=text] {
@@ -421,8 +428,7 @@ html {
 }
 
 .slide_show #search_box #jobRole form #jr {
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+  border-radius: 20px;
   background-image: url("../imgs/searchicon.png");
   background-position: 10px 10px;
   background-repeat: no-repeat;
@@ -450,6 +456,10 @@ html {
   position: relative;
   left: 40px;
   font-size: 1rem;
+}
+
+.slide_show #search_box #jobRole form #wh {
+  border-radius: 20px;
 }
 
 .search_page {
@@ -630,6 +640,55 @@ html {
   text-align: center;
   font-size: 0.7rem;
   padding-top: 10px;
+}
+
+section#carousel {
+  width: 100%;
+  height: 500px;
+  background-color: indigo;
+  position: relative;
+  top: 200px;
+  overflow: hidden;
+}
+
+section#carousel button {
+  padding: 10px 20px;
+}
+
+section#carousel #bt1 {
+  top: 100px;
+  left: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+section#carousel #bt2 {
+  left: 450px;
+  bottom: 395px;
+  position: relative;
+}
+
+section#carousel #carousel__holder {
+  background-color: green;
+  left: 50px;
+  position: relative;
+  width: 2500px;
+  height: 200px;
+}
+
+section#carousel #carousel__holder li {
+  width: 300px;
+  height: 450px;
+  background-color: aqua;
+  float: left;
+  margin: 0 20px;
+  list-style-type: none;
+  border-radius: 10px;
+}
+
+.transit {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .red {

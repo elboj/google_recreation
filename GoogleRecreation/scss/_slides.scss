@@ -3,7 +3,7 @@
     flex-direction: column;
     width: 100%;
     box-sizing: border-box;
-    // border: $border;
+    //border: $border;
     margin-top: 50px;
     color: #202124;
     font-family: 'Poppins', sans-serif;
@@ -95,38 +95,43 @@
         #jobRole {
             display: flex;
             width: 100%;
-            //border: 2px solid lightcoral;
+            //flex-direction: column;
+            //border: 2px solid green;
 
             form {
                 display: flex;
+                flex-direction: column;
                 width: 100%;
                 //border: slateblue 2px solid;
 
                 #connector {
-                    width: 10% !important;
+                    width: 100% !important;
+                    display: none;
 
                     ::placeholder {
                         text-align: center;
                     }
                 }
                 #sub_div {
-                    width: 10% !important;
-                    border: 1px solid rgb(223, 222, 222);
-                    border-top-right-radius: 10px;
-                    border-bottom-right-radius: 10px;
+                    width: 100% !important;
                     text-align: center;
                     
                     input[type = submit] {
-                        cursor: pointer;
-                        background-color: white;
+                        background-color: #1967D2;
+                        width: 100%;
+                        color: white;
                         border: none;
+                        border-radius: 20px;
                         padding: 15px 0;
+                        cursor: pointer;
+                        font-weight: 500;
                         
                     }
                 }
 
-                div {
-                    width: 40%;
+                div {   //the margin on this div also affects the submit div
+                    width: 100%;
+                    margin: 10px 0;
                     //border: 2px solid red;
 
                     input[type = text] {
@@ -137,13 +142,12 @@
 
                     input[type=text]:focus {
                         border: 3px solid #555;
-                      }
+                    }
                 }
 
                 #jr {
                     //border: 1px solid tomato;
-                    border-top-left-radius: 10px;
-                    border-bottom-left-radius: 10px;
+                    border-radius: 20px;
                     background-image: url('../imgs/searchicon.png');
                     background-position: 10px 10px; 
                     background-repeat: no-repeat;
@@ -153,6 +157,10 @@
                     position: relative;
                     left: 40px;
                     font-size: 1rem;
+                }
+
+                #wh {
+                    border-radius: 20px; 
                 }
 
                 #wh::placeholder {

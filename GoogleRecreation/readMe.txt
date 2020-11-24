@@ -111,3 +111,54 @@ works for a fs of 2.5rem
 
 *************
 ADDED THIS LINE
+
+*********************************************************************8
+WORKING FOR SEARCH FULL SCREEN
+#jobRole {
+            display: flex;
+            width: 100%;
+            //flex-direction: column;
+            //border: 2px solid green;
+
+            form {
+                display: flex;
+                width: 100%;
+                //border: slateblue 2px solid;
+
+                #connector {
+                    width: 10% !important;
+
+                    ::placeholder {
+                        text-align: center;
+                    }
+                }
+                #sub_div {
+                    width: 10% !important;
+                    border: 1px solid rgb(223, 222, 222);
+                    border-top-right-radius: 10px;
+                    border-bottom-right-radius: 10px;
+                    text-align: center;
+                    
+                    input[type = submit] {
+                        cursor: pointer;
+                        background-color: white;
+                        border: none;
+                        padding: 15px 0;
+                        
+                    }
+                }
+
+                div {
+                    width: 40%;
+                    //border: 2px solid red;
+
+                    input[type = text] {
+                        padding: 15px 0px;
+                        width: 100%;
+                        border: 1px solid rgb(223, 222, 222);
+                    }
+
+                    input[type=text]:focus {
+                        border: 3px solid #555;
+                      }
+                }
